@@ -8,6 +8,9 @@ out.dir <- "CIT"
 
 pval.cutoff = 0.05
 
+#### make sure to install RCit codes first
+install.packages("codes/sources/RCit_0.0.1.tar.gz",type = "source",repos = NULL)
+
 #### extract methylation signatures: by correlations
 sig.df <- read.delim(file = sig.file,sep = "\t",header = TRUE,stringsAsFactors = FALSE)
 
